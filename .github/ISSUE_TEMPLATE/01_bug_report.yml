@@ -11,7 +11,18 @@ body:
       label: Title
       description: "Provide a short and descriptive title for the issue."
       placeholder: "Enter a brief title for the bug"
+    validations:
       required: true
+
+  - type: checkboxes
+    id: used_software
+    attributes:
+      label: Used Software
+      description: "Select the software you were using when the issue occurred."
+      options:
+        - label: DAVALIEN
+        - label: EOMasters Pro Toolbox
+        - label: EOMasters Basic Toolbox
 
   - type: textarea
     id: description
@@ -19,6 +30,7 @@ body:
       label: Short Description
       description: "Summarize the issue in a few sentences."
       placeholder: "Enter a short description of the issue"
+    validations:
       required: true
 
   - type: textarea
@@ -31,6 +43,7 @@ body:
         1. Step one
         2. Step two
         3. Step three
+    validations:
       required: true
 
   - type: input
@@ -39,21 +52,8 @@ body:
       label: Operating System
       description: "Specify the operating system you were using."
       placeholder: "e.g., Windows 11, macOS Ventura, Ubuntu 22.04"
+    validations:
       required: true
-
-  - type: checkboxes
-    id: used_software
-    attributes:
-      label: Used Software
-      description: "Select the software you were using when the issue occurred."
-      required: true
-      options:
-        - label: DAVALIEN
-          value: davalien
-        - label: EOMasters Pro Toolbox
-          value: eo_masters_pro_toolbox
-        - label: EOMasters Basic Toolbox
-          value: eo_masters_basic_toolbox
 
   - type: markdown
     attributes:

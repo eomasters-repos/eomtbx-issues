@@ -1,16 +1,16 @@
 name: Bug Report
 description: Submit a bug report.
-title: "[BUG]"
 labels: ["bug"]
 assignees:
   - eomasters-repos
 body:
-  - type: input
-    id: title
+
+  - type: textarea
+    id: description
     attributes:
-      label: Summary
-      description: "Provide a short and descriptive title for the issue."
-      placeholder: "Enter a brief title for the bug"
+      label: Short Description
+      description: "Summarize the issue in a few sentences."
+      placeholder: "Enter a short description of the issue"
     validations:
       required: true
 
@@ -27,15 +27,6 @@ body:
       required: true
 
   - type: textarea
-    id: description
-    attributes:
-      label: Short Description
-      description: "Summarize the issue in a few sentences."
-      placeholder: "Enter a short description of the issue"
-    validations:
-      required: true
-
-  - type: textarea
     id: steps_to_reproduce
     attributes:
       label: Steps to Reproduce the Problem
@@ -45,6 +36,13 @@ body:
         1. Step one
         2. Step two
         3. Step three
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Log Output
+      description: "Provide the log output."
+      placeholder: Either paste the log here or add the log file.
 
   - type: dropdown
     id: operating_system

@@ -20,9 +20,14 @@ body:
       label: Used Software
       description: "Select the software you were using when the issue occurred."
       options:
-        - DAVALIEN
         - EOMasters Pro Toolbox
         - EOMasters Basic Toolbox
+        - DAVALIEN
+        - EOpedia
+        - EOM Commons SNAP Library
+        - EOM Commons Library
+        - GpfRunner
+        - mvn-repo
     validations:
       required: true
 

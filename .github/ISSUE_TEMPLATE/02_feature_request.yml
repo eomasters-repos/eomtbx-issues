@@ -16,6 +16,23 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: used_software
+    attributes:
+      label: Used Software
+      description: "Select the software your request affects."
+      options:
+        - EOMasters Pro Toolbox
+        - EOMasters Basic Toolbox
+        - DAVALIEN
+        - EOpedia
+        - EOM Commons SNAP Library
+        - EOM Commons Library
+        - GpfRunner
+        - mvn-repo
+    validations:
+      required: true
+
   - type: markdown
     attributes:
       value: "## Thanks for your request! We'll take care of it."

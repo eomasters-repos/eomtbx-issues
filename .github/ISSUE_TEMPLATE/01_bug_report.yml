@@ -8,21 +8,23 @@ body:
   - type: input
     id: title
     attributes:
-      label: Title
+      label: Summary
       description: "Provide a short and descriptive title for the issue."
       placeholder: "Enter a brief title for the bug"
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: used_software
     attributes:
       label: Used Software
       description: "Select the software you were using when the issue occurred."
       options:
-        - label: DAVALIEN
-        - label: EOMasters Pro Toolbox
-        - label: EOMasters Basic Toolbox
+        - DAVALIEN
+        - EOMasters Pro Toolbox
+        - EOMasters Basic Toolbox
+    validations:
+      required: true
 
   - type: textarea
     id: description
@@ -43,18 +45,26 @@ body:
         1. Step one
         2. Step two
         3. Step three
-    validations:
-      required: true
 
-  - type: input
+  - type: dropdown
     id: operating_system
     attributes:
       label: Operating System
       description: "Specify the operating system you were using."
-      placeholder: "e.g., Windows 11, macOS Ventura, Ubuntu 22.04"
+      options:
+        - Windows
+        - macOs
+        - Unix
     validations:
       required: true
 
+  - type: input
+    id: os_details
+    attributes:
+      label: Operating System Details
+      description: "Provide details about the operating system you were using."
+      placeholder: "e.g., the version, the Linux distribution or other details."
+
   - type: markdown
     attributes:
-      value: "Thanks for completing our form!"
+      value: "Thanks for reporting this issue! We'll take care of it."

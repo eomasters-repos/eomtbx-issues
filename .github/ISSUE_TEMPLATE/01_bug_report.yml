@@ -65,4 +65,4 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Thanks for reporting this issue! We'll take care of it."
+      value: "# Thanks for your report! We'll take care of it."

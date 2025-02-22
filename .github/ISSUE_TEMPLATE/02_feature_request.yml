@@ -1,4 +1,4 @@
-name: Feature Request
+name: 🚀 Feature Request
 description: Submit a feature or enhancement request.
 labels: [ "feature" ]
 assignees:
@@ -18,4 +18,4 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Thanks for your request! We'll take care of it."
+      value: "## Thanks for your request! We'll take care of it."

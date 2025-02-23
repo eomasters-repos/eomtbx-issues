@@ -33,6 +33,17 @@ body:
       placeholder: Either paste the log here or add the log file.
 
   - type: dropdown
+    id: used_toolbox
+    attributes:
+      label: Used Toolbox
+      description: "Select the toolbox you were using."
+      options:
+        - Pro Toolbox
+        - Basic Toolbox
+    validations:
+      required: true
+
+  - type: dropdown
     id: operating_system
     attributes:
       label: Operating System

@@ -17,19 +17,13 @@ body:
       required: true
 
   - type: dropdown
-    id: used_software
+    id: used_toolbox
     attributes:
-      label: Used Software
-      description: "Select the software your request affects."
+      label: Used Toolbox
+      description: "Select the toolbox you were using."
       options:
-        - EOMasters Pro Toolbox
-        - EOMasters Basic Toolbox
-        - DAVALIEN
-        - EOpedia
-        - EOM Commons SNAP Library
-        - EOM Commons Library
-        - GpfRunner
-        - mvn-repo
+        - Pro Toolbox
+        - Basic Toolbox
     validations:
       required: true
 

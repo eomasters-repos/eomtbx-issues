@@ -16,17 +16,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: used_toolbox
-    attributes:
-      label: Used Toolbox
-      description: "Select the toolbox you were using."
-      options:
-        - Pro Toolbox
-        - Basic Toolbox
-    validations:
-      required: true
-
   - type: markdown
     attributes:
       value: "## Thanks for your request! We'll take care of it."
